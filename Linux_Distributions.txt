@@ -1,0 +1,153 @@
+=============================
+Linux Distribution Provided by AWS:
+===============================
+Amazon Linux
+MacOS
+RHEL (RedHat EnterPrise Linux)
+Ubuntu
+Suse
+Debian
+
+Assignment : 
+
+You need to take Debian as an Operating system and create a putty session with it and create directory and test directory. 
+
+
+Linux Filesystem:
+===============
+Working Amazon Linux Filesystem
+---
+
+* Username for Amazon Linux is ec2-user
+
+* ec2-user is default user comes under /home dir then /home dir comes unders Amazon Linux Filesystem
+
+$ cat /etc/system-release
+Amazon Linux release 2023 (Amazon Linux)
+
+$ cat /etc/os-release
+NAME="Amazon Linux"
+VERSION="2023"
+ID="amzn"
+ID_LIKE="fedora"
+VERSION_ID="2023"
+PLATFORM_ID="platform:al2023"
+PRETTY_NAME="Amazon Linux 2023"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:2.3:o:amazon:amazon_linux:2023"
+HOME_URL="https://aws.amazon.com/linux/"
+BUG_REPORT_URL="https://github.com/amazonlinux/amazon-linux-2023"
+SUPPORT_END="2028-03-01"
+
+
+$ is identification for normal user or default user have limited access/permission
+
+# is identification for root/super/admin user have full permission
+
+/ root : Linux start with /
+
+$ pwd
+/home/ec2-user
+
+pwd stands for present workinng directory
+
+$ cd /
+
+$ pwd
+/
+bin  boot  dev  etc  home  lib  lib64  local  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+
+
+
+Working RHEL
+---
+$ cat /etc/system-release
+Red Hat Enterprise Linux release 8.6 (Ootpa)
+
+$ cat /etc/os-release
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enter
+
+cd / 
+
+$ ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+Working Ubuntu
+---
+* Username for Ubuntu is ubuntu
+
+
+$ cat /etc/system-release
+cat: /etc/system-release: No such file or directory
+
+
+$ cat /etc/os-release
+PRETTY_NAME="Ubuntu 22.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.1 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+
+$ ls
+bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+
+
+Working Ubuntu
+---
+* Username for SUSE Linux  is ec2-user
+
+
+$ cat /etc/system-release
+cat: /etc/system-release: No such file or directory
+
+
+$ cat /etc/os-release
+PRETTY_NAME="Ubuntu 22.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.1 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+
+cd /bin/
+
+
+$ ls
+bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+
+
+
+
+
+
+
+
+
+

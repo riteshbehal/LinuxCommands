@@ -1,0 +1,66 @@
+Home Directory in Linux
+
+Different b/w bin and sbin
+
+Different types of users in Linux
+
+show 
+
+	mkdir 
+
+	mkdir -v TestDir
+
+Some folders creation 
+
+	DevOps
+		Linux
+			ShellScripting
+					TestFolder
+
+mkdir -p Devops/Linux/ShellScripting/TestFolder
+
+mkdir -vp Devops/Linux/ShellScripting/TestFolder
+
+
+
+---------------------------------------------
+Tree Command
+=============================================
+
+sudo yum install tree -y
+sudo yum remove tree -y
+sudo yum update tree -y
+
+
+===========================================
+Same commands in Ubuntu --> No 
+
+apt-get install tree -y
+
+============================================
+exit command to exit from root 
+
+============================================
+
+tree
+
+===========================================
+
+ls - l (long information)
+
+Directories are started from d
+Files are starting from -
+
+================================================
+
+ls Directory 
+(it will show content inside directory
+
+
+================================================
+mkdir Devops/test{1,2,3,4}
+
+
+
+
+
