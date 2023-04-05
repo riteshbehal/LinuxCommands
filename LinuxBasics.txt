@@ -1,34 +1,76 @@
-Home Directory in Linux
+================================
+Create Directory without Message
+================================
+mkdir 
 
-Different b/w bin and sbin
+Make Directory 
 
-Different types of users in Linux
 
-show 
+================================
+Create Directory with Message (Verbose)
+================================
+mkdir -v TestDir
 
-	mkdir 
 
-	mkdir -v TestDir
 
-Some folders creation 
+================================
+ERROR with -P 
+================================
+mkdir Devops/Linux/ShellScripting
+
+
+
+================================
+If Directory exist prior then it will work 
+================================
+mkdir Devops/Linux/ShellScripting/AWS
+
+
+
+================================
+Create Sub Directory without Message (Parent)
+================================
+mkdir -p Devops/Linux/ShellScripting
+
+
+
+================================
+Create Sub Directory with Message
+================================
+mkdir -pv Devops/Linux/ShellScripting
+
+
+
+================================
+How to see Folders in tree Structure
+================================
 
 	DevOps
 		Linux
 			ShellScripting
 					TestFolder
 
-mkdir -p Devops/Linux/ShellScripting/TestFolder
-
-mkdir -vp Devops/Linux/ShellScripting/TestFolder
-
-
 
 ---------------------------------------------
-Tree Command
+Install tree Command without Confirmation (without -y)
 =============================================
-
 sudo yum install tree -y
+
+---------------------------------------------
+Install tree Command
+=============================================
+sudo yum install tree -y
+
+
+
+Remove Tree Command 
+=============================================
 sudo yum remove tree -y
+
+
+
+Update Tree Command
+=============================================
 sudo yum update tree -y
 
 
@@ -46,7 +88,7 @@ tree
 
 ===========================================
 
-ls - l (long information)
+ls - l (long information) or ll command
 
 Directories are started from d
 Files are starting from -
@@ -54,11 +96,160 @@ Files are starting from -
 ================================================
 
 ls Directory 
-(it will show content inside directory
-
+(it will show content inside directory)
 
 ================================================
 mkdir Devops/test{1,2,3,4}
+
+
+===========================================================
+===========================================================
+to see hidden files and directory 
+
+ls -a
+
+
+
+===========================================================
+===========================================================
+to see hidden files and directory with details of size and permissions
+
+ls -la
+
+
+
+===========================================================
+===========================================================
+inode (print Inode numbers of every directory/files
+
+ls -li
+
+
+===========================================================
+===========================================================
+Directory (Descending order of time)
+
+ls -lt
+
+
+===========================================================
+===========================================================
+Directory (Ascending order of time)
+
+ls -ltr (reverse)
+
+
+
+=================================
+How to create hidden file
+=================================
+
+Command : touch .file2
+
+
+
+===========================================================
+How to see hidden file
+===========================================================
+
+Command : la -a
+
+
+===========================================================
+How to come directely to root directory 
+===========================================================
+
+Command : - cd ~
+
+
+===========================================================
+check time and date
+===========================================================
+Command : date
+
+
+===========================================================
+to remove directory (this command will only work if directory is blank)
+===========================================================
+Command: rmdir TestDir2
+
+
+===========================================================
+to remove directory (this command forcefully delete even if directory is not blank)
+===========================================================
+Command: rm -rf Devops
+
+rm means : Remove
+-rf means : Recursive Force
+
+
+
+
+
+    1  sudo su
+    2  mkdir TestDir1
+    3  ls
+    4  mkdir TestDir2
+    5  ls
+    6  mkdir TestDir3
+    7  mkdir -v TestDir4
+    8  clear
+    9  mkdir Devops/Linux/ShellScripting
+   10  mkdir -p Devops/Linux/ShellScripting
+   11  ls
+   12  cd Devops/
+   13  cd Linux/
+   14  cd ShellScripting/
+   15  pwd
+   16  cd /
+   17  pwd
+   18  cd ~
+   19  mkdir -pv AWS/Ec2/AutoScaling
+   20  ls
+   21  tree
+   22   yum install tree
+   23  sudo yum install tree
+   24  sudo yum install tree -y
+   25  tree
+   26  sudo yum remove tree -y
+   27  tree
+   28  sudo yum install tree -y
+   29  tree
+   30  history
+   31  sudo yum update tree -y
+   32  ls
+   33  touch file1
+   34  touch file2 file3
+   35  ls
+   36  ls -l
+   37  ll
+   38  ls Devops
+   39  mkdir Devops/test{1,2,3,4}
+   40  ls
+   41  cd Devops/
+   42  ls
+   43  cd ~
+   44  ls
+   45  ls -a
+   46  ls -la
+   47  ls -li
+   48  ls -lt
+   49  date
+   50  ls -ltr
+   51  time
+   52  date
+   53  touch .file4 .file5
+   54  ls
+   55  ls -a
+   56  rmdir TestDir1
+   57  rmdir -v TestDir2
+   58  ls
+   59  rmdir AWS
+   60  rm -rf AWS
+   61  ls
+   62  history
+
+
 
 
 
