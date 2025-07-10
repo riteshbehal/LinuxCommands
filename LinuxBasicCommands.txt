@@ -1,0 +1,136 @@
+===============================================================
+Section:- Root User and Normal Users in Linux
+---------------------------------------------------------------
+* Root User:
+  The root user is the "superuser" or administrator account in Linux that has absolute, unrestricted control over the entire system. It can modify any file, manage all users, and perform any system-level task without permission checks.
+
+* Normal Users:
+  Custom users with limited permissions.
+
+Note:
+- Linux is **case sensitive**
+
+Example:
+mkdir Test1  
+mkdir test1   # This creates a different directory than "Test1"
+
+===============================================================
+Section:- How to Create, Update, Append file(s)
+===============================================================
+
+===============================================================
+Section:- Check Linux Version
+---------------------------------------------------------------
+cat /etc/system-release  
+Amazon Linux release 2023 (Amazon Linux)
+
+===============================================================
+Section:- Create a Directory
+---------------------------------------------------------------
+mkdir Linux1
+
+===============================================================
+Section:- Change Directory
+---------------------------------------------------------------
+cd Linux1
+
+===============================================================
+Section:- cat command is use to create new file
+---------------------------------------------------------------
+cat > file1.txt  
+Welcome to Linux  
+
+
+---------------------------------------------------------------
+* cat command is use to show content inside file
+cat file1.txt  
+Welcome to Linux
+
+---------------------------------------------------------------
+* cat command is use append data inside file
+cat >> file1.txt  
+Welcome to ShellScripting  
+
+
+cat file1.txt  
+Welcome to Linux  
+Welcome to ShellScripting
+
+===============================================================
+
+
+===============================================================
+Section:- Working with echo command
+---------------------------------------------------------------
+* echo - display a line of text
+
+* echo is used to create new file
+echo 'This training is deliver by Ritesh' > file2.txt
+
+* echo is used to append data in existing file
+echo 'Today is wednesday' >> file2.txt  
+echo 'Today is wednesday' >> file2.txt
+
+cat file2.txt  
+This training is deliver by Ritesh  
+Today is wednesday  
+Today is wednesday
+
+===============================================================
+
+
+===============================================================
+Section:- Working with touch command
+---------------------------------------------------------------
+* Create single empty file with touch command
+touch file3.txt
+
+---------------------------------------------------------------
+* Create multiple empty files with touch command
+touch file4.txt file5.txt file6.txt file7.txt
+
+---------------------------------------------------------------
+* Use expression to create multiple empty files
+touch file{8..999}.txt
+
+---------------------------------------------------------------
+* Description:
+NAME
+    touch - change file timestamps
+
+SYNOPSIS
+    touch [OPTION]... FILE...
+
+DESCRIPTION
+    Update the access and modification times of each FILE to the current time.
+    A FILE that does not exist is created empty, unless -c or -h is used.
+
+===============================================================
+
+
+===============================================================
+Section:- Delete/Remove File(s)
+---------------------------------------------------------------
+* Remove Single File:
+rm <filename>
+
+---------------------------------------------------------------
+* Remove Multiple Files:
+rm <filename1> <filename2> <filename3>
+
+---------------------------------------------------------------
+* Remove with Expression:
+rm file{8..999}.txt
+
+===============================================================
+
+
+===============================================================
+Section:- Create and Remove Directory
+---------------------------------------------------------------
+* Create Directory:
+mkdir test
+
+---------------------------------------------------------------
+* Remove Directory:
+rmdir test
